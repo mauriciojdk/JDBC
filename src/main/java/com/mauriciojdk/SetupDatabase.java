@@ -18,7 +18,7 @@ public class SetupDatabase {
         Connection connection = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost/movies", "suporte", "Mau0521@"); //URL é o nome do servidor e qual banco de dados - USER é usuario seguido da senha para ter acesso
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/movies", "root", ""); //URL é o nome do servidor e qual banco de dados - USER é usuario seguido da senha para ter acesso
         } catch (SQLException e){
             e.printStackTrace();
         }
